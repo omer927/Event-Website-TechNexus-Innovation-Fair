@@ -8,8 +8,8 @@ html{
 body{
     background-color: var(--bg-color);
     font-size: 16px;
-    color: var(--bg-color);
-    font-family: Tahoma, sans-serif;
+    color: var(--text-color);
+    font-family: libre Baskerville;
     margin: 50px;
 }
 
@@ -41,8 +41,8 @@ a,a *{
 }
 
 button{
-    background: green;
-    color: white;
+    background: var(--accent-color-darkest);
+    color: var(--text-color-dark-mode);
     border: none;
     padding: 5px 12px;
     border-radius: 5px;
@@ -116,19 +116,19 @@ a:active{
 
 /* Custom colors */
 :root {
-    /* Light Mode */
-    --bg-color: #a6a0cf;
-    --text-color: #231942;
+    /* Light Mode Base */
+    --bg-color: #EAEDF6;           /* Your original light blue-gray */
+    --text-color: #171F36;         /* Your original deep navy */
 
-    /* Dark Mode */
-    --bg-color-dark-mode: #3e3377;
-    --text-color-dark-mode: #fff;
+    /* Dark Mode Base */
+    --bg-color-dark-mode: #252E48;  /* Slightly lighter navy for better depth */
+    --text-color-dark-mode: #FFFFFF;
 
-    /* Accent Colors */
-    --accent-color-light: #d2cff5;
-    --accent-color-medium: #684fb5;
-    --accent-color-dark: #482f95;
-    --accent-color-darkest: #231942;
+    /* Balanced Accent Scale (Following Professor's Logic) */
+    --accent-color-light: #F4F6FB;   /* Higher contrast light accent */
+    --accent-color-medium: #4A5D8A;  /* Mid-tone blue for UI elements */
+    --accent-color-dark: #2D3A5F;    /* Deep blue for secondary buttons */
+    --accent-color-darkest: #171F36; /* Your darkest navy */
     --accent-color-green: #28eb76;
 
     /* Error Colors */
