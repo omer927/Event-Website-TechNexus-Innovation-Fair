@@ -82,6 +82,7 @@ button:hover{
     left:0;
     bottom:0;
     width:100%;
+    backgorund-color: var()
 }
 
 
@@ -116,20 +117,25 @@ a:active{
 
 /* Custom colors */
 :root {
-    /* Light Mode Base */
-    --bg-color: #EAEDF6;           /* Your original light blue-gray */
-    --text-color: #171F36;         /* Your original deep navy */
+    :root {
+    /* --- Light Mode Base --- */
+    --bg-color: #F4F6FB;           /* Very light gray-blue background */
+    --text-color: #1A2542;         /* Deep Navy for text */
 
-    /* Dark Mode Base */
-    --bg-color-dark-mode: #252E48;  /* Slightly lighter navy for better depth */
-    --text-color-dark-mode: #FFFFFF;
+    /* --- Dark Mode Base --- */
+    --bg-color-dark-mode: #10172A; /* Darker Slate for true dark mode */
+    --text-color-dark-mode: #F4F6FB;
 
-    /* Balanced Accent Scale (Following Professor's Logic) */
-    --accent-color-light: #F4F6FB;   /* Higher contrast light accent */
-    --accent-color-medium: #4A5D8A;  /* Mid-tone blue for UI elements */
-    --accent-color-dark: #2D3A5F;    /* Deep blue for secondary buttons */
-    --accent-color-darkest: #171F36; /* Your darkest navy */
-    --accent-color-green: #28eb76;
+    /* --- Blue Primary Scale --- */
+    --accent-color-light: #D9E2F0;   /* Light blue for card backgrounds */
+    --accent-color-medium: #334155;  /* Slate blue for links */
+    --accent-color-dark: #1A2542;    /* Primary Navy */
+    --accent-color-darkest: #0F172A; /* Header/Navbar Background */
+
+    /* --- Orange Complementary Scale --- */
+    --complement-primary: #F2994A;   /* Main Orange for Buttons */
+    --complement-hover: #E67E22;     /* Darker Orange for Hover */
+    --accent-color-purple: #F2994A;  /* Replacing your purple var with orange */
 
     /* Error Colors */
     --error-color: #f8bbd0;

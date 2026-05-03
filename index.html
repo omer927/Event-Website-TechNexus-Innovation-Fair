@@ -1,91 +1,216 @@
 <!DOCTYPE html>
-<html lang="en"> 
-    <head> 
 
+<html lang="en"> 
+
+    <head> 
+        <meta charset="UTF-8">
         <title>TechNexus Innovation Fair</title>
+        <link rel="icon" href="./img/Logo.png" type="image/x-icon"/>
         <link rel="stylesheet" href="styles.css"/> 
         <link rel="stylesheet" href="reset.css" type="text/css"/>
         <script type="text/javascript" src="script.js"></script>
-        <link rel="icon" href="./img/Logo.png" type="image/x-icon"/>
-         
     </head>
 
     <body> 
 
-        <!-- Header -->
-        <div class="header"> 
-            <div id="header-left"> 
+    <!-- NAVBAR -->
+        <nav class="navbar">
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-logo">
+                <img class="light-logo" alt="abstract cube" src="" width="50px">
+                <img class="dark-logo" alt="abstract cube"src=""  width="50px">
+            </div>
+
+            <ul id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#rsvp"></a>RSVP</li>
+                <li><a href="#Links">Links</a></li>
+            </ul>
+
+            <div class="nav-right"> 
+                <li><button id="theme-toggle" class="theme-icon"></button></li>
+            </div>
+        </nav>
+
+
+    <!-- HEADER -->
+        <div class="header-container"> 
+            <div id="header-item"> 
                 <img id="header-img" src="./img/Logo.png" width="250px"/>
             </div>
-            <div id="header-right"> 
+            <div id="header-item"> 
                 <h1>TechNexus Innovation Fair</h1>
                 <h2>Subtitle</h2>
-                <button class="header-botton" type="button">Sign Up</button>
-                <button class="header-botton" type="button">Project Guidlines</button>
+                <button class="header-botton" type="button">Register</button>
+                <button class="header-botton" type="button">Details</button>
             </div>
         </div>
 
-        <!-- About -->
-         <h2>About the event</h2>
-         <iframe src=""> </iframe>
-         <p>A comprehensive local event for all levels of professionals involved with technology through the complete lifecycle of a product; from hardware repair to the most complex networking and cyber security practices. Hosted in one central location for participants of all ages, both as hobbyists/novices or experienced systems designers, the Fair allows for the demonstration of technical ability directly to prospective employers across the globe, from some of the most well-known Cloud, AI, and Systems integration organisations in existence today. The Fair will provide you with an opportunity to validate your abilities, solve challenging problems that exist in today’s marketplace, and potentially secure your next major career move at TechNexus.</p>
+
+    <!-- ABOUT -->
+         <section id="about" class="fade-in"> 
+            <h2>About the event</h2>
+            <p>A comprehensive local event for all levels of professionals involved with technology through the complete lifecycle of a product; from hardware repair to the most complex networking and cyber security practices. Hosted in one central location for participants of all ages, both as hobbyists/novices or experienced systems designers, the Fair allows for the demonstration of technical ability directly to prospective employers across the globe, from some of the most well-known Cloud, AI, and Systems integration organisations in existence today. The Fair will provide you with an opportunity to validate your abilities, solve challenging problems that exist in today’s marketplace, and potentially secure your next major career move at TechNexus.</p>
+            <p>Join us for a night of innovation and community building.</p>
+
+            <h3>What to expect</h3>
+            <ul>
+                <li><b>Bullet 1:</b> <i>Description</i></li> 
+                <li><b>Bullet 2:</b> <i>Description</i></li>
+                <li><b>Bullet 3:</b> <i>Description</i></li>
+            </ul>
+        </section>
 
 
-         <h3>What to expect</h3>
-         <h4>Tag Line</h4>
-         <ul>
-            <li><b>Bullet 1:</b> <i>Description</i></li> 
-            <li><b>Bullet 2:</b> <i>Description</i></li>
-            <li><b>Bullet 3:</b> <i>Description</i></li>
-         </ul>
+    <!-- PERPARE -->
+         <section id="perpare" class="fade-in">
+            <h2></h2>
+            <p></p>
 
-         <!-- Schedule -->
-        <h2>Event Schedule</h2>
+            <div> 
+                <iframe width= src="" title="" loading="lazy" allowfullscreen></iframe>
+                <iframe width= src="" title="" loading="lazy" allowfullscreen></iframe>
+            </div>
+         </section>
 
-            <img alt="" src="./img/ElectronicRepairWorkshop.png"/>
-            <h3>Electronic Repair Workshop</h3>
-            <p>Description of event activity.</p>
+
+    <!-- SCHEDULE -->
+        <section id="schedule" class="fade-in"> 
+            <h2>Event Schedule</h2>
+            <div> 
+                <div class="schedule-item"> 
+                    <img alt="" src="./img/ElectronicRepairWorkshop.png"/>
+                    <div class="schedule-time">Sat · 9:00 AM</div>
+                    <h3>Electronic Repair Workshop</h3>
+                    <p>Description of event activity.</p>
+                </div>
                 
+                <div class="schedule-item">
+                    <img alt="" src="./img/WhiteboardCodingSprint.png"/>
+                    <div class="schedule-time">Sat · 9:00 AM</div>
+                    <h3>Whiteboard Coding Sprint</h3>
+                    <p>Description of event activity.</p>
+                </div>
                 
-            <img alt="" src="./img/WhiteboardCodingSprint.png"/>
-            <h3>Whiteboard Coding Sprint</h3>
-            <p>Description of event activity.</p>
-               
-                
-            <img alt="" src="./img/ArduinoProtoypingLab.png"/>
-            <h3>Arduino Prototyping Lab</h3>
-            <p>Description of event activity.</p>
-            
-                
-            <img alt="" src="./img/CircuitDebuggingChallenge.png"/>
-            <h3>Circuit Debugging Challenge</h3>
-            <p>Description of event activity.</p>
+                <div class="schedule-item">
+                    <img alt="" src="./img/ArduinoProtoypingLab.png"/>
+                    <div class="schedule-time">Sat · 9:00 AM</div>
+                    <h3>Arduino Prototyping Lab</h3>
+                    <p>Description of event activity.</p>
+                </div>
 
-    
-            <img alt="" src="./img/NetworkStressTesting.png" />
-            <h3>Network Stress Testing</h3>
-            <p>Description of event activity.</p>
-            
+                <div class="schedule-item">    
+                    <img alt="" src="./img/CircuitDebuggingChallenge.png"/>
+                    <div class="schedule-time">Sat · 9:00 AM</div>
+                    <h3>Circuit Debugging Challenge</h3>
+                    <p>Description of event activity.</p>
+                </div>
+        
+                <div class="schedule-item">
+                    <img alt="" src="./img/NetworkStressTesting.png" />
+                    <div class="schedule-time">Sat · 9:00 AM</div>
+                    <h3>Network Stress Testing</h3>
+                    <p>Description of event activity.</p>
+                </div>
 
-            <img alt="" src="./img/CloudInfrastructureSeminar.png"/>
-            <h3>Cloud Infrastructure Seminar</h3>
-            <p>Description of event activity.</p>
-                
+                <div class="schedule-item">
+                    <img alt="" src="./img/CloudInfrastructureSeminar.png"/>
+                    <div class="schedule-time">Sat · 9:00 AM</div>
+                    <h3>Cloud Infrastructure Seminar</h3>
+                    <p>Description of event activity.</p>
+                </div>   
 
-            <img alt="" src="./img/DatabaseOptimizationZone.png"/>
-            <h3>Database Optimization Zone</h3>
-            <p>Description of event activity.</p>
-    
+                <div class="schedule-item">
+                    <img alt="" src="./img/DatabaseOptimizationZone.png"/>
+                    <div class="schedule-time">Sat · 9:00 AM</div>
+                    <h3>Database Optimization Zone</h3>
+                    <p>Description of event activity.</p>
+                </div>
 
-            <img alt="" src="./img/CompanyTableCareerFair.png"/>
-            <h3>Company Table Career Fair</h3>
-            <p>Description of event activity.</p>
+                <div class="schedule-item">
+                    <img alt="" src="./img/CompanyTableCareerFair.png"/>
+                    <div class="schedule-time">Sat · 9:00 AM</div>
+                    <h3>Company Table Career Fair</h3>
+                    <p>Description of event activity.</p>
+                </div>
+            </div>
+        </section>
 
-        <!-- rsvp -->
 
-        <!-- success modal -->
+    <!-- RESOURSES -->
+        <section id="resourses" class="fade-in">
+            <h2></h2>
 
-        <!-- Links -->
+            <a>
+                <article>
+
+                </article>
+            </a>
+
+            <a>
+                <article>
+
+                </article>
+            </a>
+
+        </section>
+
+    <!-- RSVP -->
+        <section id="rsvp" class="fade-in">
+            <h2>RSVP</h2>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+
+                </div>
+
+                <div class="rsvp-participitant" id="participitant">
+                    <p>Anne from RICE is attending</p>
+                    <p>Ava from Wellesley is attending</p>
+                    <p>Oscar from UT Austin is attending</p>
+                </div>
+
+            </div>
+
+            <form id="rsvp-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" aria-label="Your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" aria-label="Your email address">
+                </div>
+
+                <div class="form-group">
+                    <label for="state">Home State:</label>
+                    <input type="text" id="state" aria-label="Your home state">
+                </div>
+
+                <div class="form-group">
+                    <label></label>
+                    <input>
+                </div>
+
+                <button type="button" id="submit-btn">Submit RSVP</button>
+
+            </form>
+
+        </section>
+
+    <!-- SUCCESS MODAL -->
+        <div id="success-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-text">
+            <div class="modal-container">
+                <button class="modal-close" id="modal-close" aria-label="Close">x</button>
+                <p id="modal-text"></p>
+                <img src="./img/coding.jpg" alt="Hackathon coding" width="200">
+            </div>
+        </div>
+
+    <!-- LINKS -->
         <h2>Links</h2>
 
         <a class="block" href="https://www.google.com/search"></a>
@@ -95,15 +220,11 @@
             </article>
         </a>
 
-        <!-- Footer -->
-        <div class="footer"> 
-            <footer> 
-                <p> 
-                    Learn More / Email Our Team
-                </p>
+    <!-- Footer -->
+            <footer class="footer"> 
+                <p> © 2026 HackTCU | Built for students</p>
             </footer>
-        </div>
-        <!-- Script -->
+    <!-- Script -->
 
     </body>
 
